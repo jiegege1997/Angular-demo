@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "route": "ng generate module app-routing --flat --module=app",
+    "generate": "ng generate component dashboard",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
