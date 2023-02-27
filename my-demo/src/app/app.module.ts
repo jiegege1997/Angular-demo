@@ -10,6 +10,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 
+// 表单
+import { HeroFormComponent } from './hero-form/hero-form.component';
 // 内存webapi
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
@@ -23,6 +25,7 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     MessageComponent,
     DashboardComponent,
     HeroSearchComponent,
+    HeroFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,4 +39,4 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
