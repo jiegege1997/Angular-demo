@@ -6,12 +6,17 @@
   width: 15em;
 }
 
+a {
+  display: flex;
+  align-items: center;
+}
+
 .heroes li {
   display: flex;
 }
 
 .heroes button {
-  flex: 1;
+  width: 20px;
   cursor: pointer;
   position: relative;
   left: 0;
@@ -20,7 +25,8 @@
   padding: 0;
   border-radius: 4px;
   display: flex;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
   height: 1.8em;
 }
 
