@@ -1,0 +1,24 @@
+@use 'basis.scss' with(
+    $font-size: 20px,
+    $ms-ratio: 1.4,
+);
+@forward 'basis.scss';
+
+$finalcolor: yellow;
+
+.height-100 {
+    height: 300px;
+    font-size: 20px;
+}
+
+.test-box {
+    height: 200px;
+}
+
+.width-100 {
+    &-red {
+        color: black;
+    }
+}
+
+

@@ -1,23 +1,11 @@
-<div *ngIf="messageService.messages.length">
-  <h2>Messages</h2>
-  <button nz-button nzType="primary" nzDanger>Primary Button</button>
-  <button type="button" class="clear" (click)="messageService.clear()">
-    Clear messages
-  </button>
-  <div style="border-bottom: 1px solid rgb(233, 233, 233)">
-    <label
-      nz-checkbox
-      [(ngModel)]="allChecked"
-      (ngModelChange)="updateAllChecked()"
-      [nzIndeterminate]="indeterminate"
-    >
-      Check all
-    </label>
+<div>
+  <div class="red-box width-100">
+    <span class="width-100-red">red box</span>
   </div>
-  <br />
-  <nz-checkbox-group
-    [(ngModel)]="checkOptionsOne"
-    (ngModelChange)="updateSingleChecked()"
-  ></nz-checkbox-group>
-  <div *ngFor="let message of messageService.messages">{{ message }}</div>
+  <div class="green-box height-100">
+    <span>green box</span>
+  </div>
+  <div class="three-box test-box">
+    <span>test box</span>
+  </div>
 </div>
