@@ -1,21 +1,13 @@
 /* MessagesComponent's private CSS styles */
 @use '../scss/pi.scss' as *;
+@use '../scss/basis.scss' as basis;
 
 .red-box {
-    height: 200px;
-    background-color: $testcolor;
-    font-size: $font-size;
+    font-size: basis.$font-size-px-lv4;
 }
 
-.green-box {
-    margin-top: 150px;
-    width: 200px;
-    background-color: $primarycolor;
-    font-size: $font-size-px-lv1;
-}
-
-.three-box {
-    margin-top: 20px;
-    background-color: $testcolor;
-    font-size: $font-size-px-lv4;
+.danger-box {
+    height: 100px;
+    width: 100px;
+    background-color: basis.$dangercolor;
 }

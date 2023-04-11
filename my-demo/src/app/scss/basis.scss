@@ -1,34 +1,26 @@
 @use 'sass:math';
 
 $dangercolor: red !default;
-$primarycolor: blue !default;
-$testcolor: green !default;
-$emptycolor: white !default;
-$finalcolor: black;
+// $primarycolor: blue !default;
+// $testcolor: green !default;
+// $emptycolor: white !default;
+// $finalcolor: black;
 $font-size: 14px !default;
-$ms-ratio: 1.0 !default;
+$ms-ratio: 2.0 !default;
 
 $font-size-px-lv1: $font-size * math.pow($ms-ratio, 1) !default;
+$font-size-px-lv4: $font-size * math.pow($ms-ratio, 1) * 0.2;
 
 .height-100 {
-    height: 100px;
+    height: $font-size-px-lv1;
     font-size: $font-size;
 }
-.height-200 {
-    height: 200px;
+
+@mixin base {
+    height: $font-size;
+    color: red;
 }
 
-.width-100 {
-    width: 100px;
-    &-red {
-        color: red;
-    }
-}
-.width-200 {
-    width: 200px;
-}
-
-.test-box {
-    height: 300px;
-    margin: 0 auto;
+.height {
+    @extend .height-100;
 }

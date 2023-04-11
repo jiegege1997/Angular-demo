@@ -1,22 +1,7 @@
-
-@use 'product.scss' as *;
-@forward 'product.scss';
-@use 'sass:math';
-
-// $dangercolor: black;
-
-// .height-100 {
-//     height: 100px;
-// }
-$font-size: 45px;
-// $ms-ratio: 1.0;
-// $font-size-px-lv1: 28px;
-$font-size-px-lv4: $font-size * math.pow($ms-ratio, 1);
-
-
-.width-100 {
-    width: 200px;
-}
-$testcolor: yellow;
+@use 'product.scss' with (
+    $font-size: 50px,
+    $dangercolor: rgb(95, 61, 61),
+);
+// @use 'product.scss'
 
 

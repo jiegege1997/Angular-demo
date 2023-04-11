@@ -1,24 +1,24 @@
-@use 'basis.scss' with(
-    $font-size: 20px,
-    $ms-ratio: 1.4,
+
+// @use 'basis.scss' with(
+//     $font-size: 20px,
+//     $ms-ratio: 1.4,
+//     // $testcolor: red
+// );
+// @forward 'basis.scss';
+@forward 'basis.scss' with(
+    $font-size: 30px !default,
+    $dangercolor: green !default,
 );
-@forward 'basis.scss';
+@use 'basis.scss';
 
-$finalcolor: yellow;
-
-.height-100 {
-    height: 300px;
-    font-size: 20px;
-}
-
-.test-box {
-    height: 200px;
-}
 
 .width-100 {
-    &-red {
-        color: black;
-    }
+    width: basis.$font-size;
+    @include basis.base;
 }
+
+// .danger-box {
+//     width: 50px !important;
+// }
 
 
