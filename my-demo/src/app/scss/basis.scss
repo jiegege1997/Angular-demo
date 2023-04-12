@@ -1,26 +1,29 @@
 @use 'sass:math';
 
 $dangercolor: red !default;
-// $primarycolor: blue !default;
-// $testcolor: green !default;
-// $emptycolor: white !default;
-// $finalcolor: black;
 $font-size: 14px !default;
 $ms-ratio: 2.0 !default;
 
 $font-size-px-lv1: $font-size * math.pow($ms-ratio, 1) !default;
-$font-size-px-lv4: $font-size * math.pow($ms-ratio, 1) * 0.2;
+$font-size-px-lv4: $font-size * math.pow($ms-ratio, 1) * 0.2 !default;
+
+@mixin colorTest {
+    height: $font-size;
+    color: red;
+}
 
 .height-100 {
     height: $font-size-px-lv1;
     font-size: $font-size;
 }
 
-@mixin base {
-    height: $font-size;
-    color: red;
-}
-
 .height {
     @extend .height-100;
 }
+
+
+
+// $primarycolor: blue !default;
+// $testcolor: green !default;
+// $emptycolor: white !default;
+// $finalcolor: black;

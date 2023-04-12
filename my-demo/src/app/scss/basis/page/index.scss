@@ -1,0 +1,6 @@
+$dangercolor: red !default;
+$font-size: 14px !default;
+
+
+$font-size-px-lv1: $font-size * math.pow($ms-ratio, 1) !default;
+$font-size-px-lv2: $font-size * math.pow($ms-ratio, 1) * 2 !default;
