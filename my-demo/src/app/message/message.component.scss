@@ -1,9 +1,9 @@
 /* MessagesComponent's private CSS styles */
-@use '../scss/pi.scss' as pi;
-@use '../scss/basis.scss' as basis;
+@use '../scss/pi/index.scss' as pi;
+@use '../scss/basis/index.scss' as basis;
 
 .red-box {
-    font-size: basis.$font-size-px-lv4;
+    font-size: basis.$font-size-px-lv2;
 }
 
 .danger-box {

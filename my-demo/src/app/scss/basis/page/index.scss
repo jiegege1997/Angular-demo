@@ -1,6 +1,23 @@
+@use 'sass:math';
+
 $dangercolor: red !default;
 $font-size: 14px !default;
-
+$ms-ratio: 1.5 !default;
 
 $font-size-px-lv1: $font-size * math.pow($ms-ratio, 1) !default;
 $font-size-px-lv2: $font-size * math.pow($ms-ratio, 1) * 2 !default;
+
+
+@mixin colorTest {
+    height: $font-size;
+    color: red;
+}
+
+.height-100 {
+    height: $font-size-px-lv1;
+    font-size: $font-size;
+}
+
+.height {
+    @extend .height-100;
+}

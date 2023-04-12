@@ -1,0 +1,12 @@
+@use '../product/index.scss' with (
+    $dangercolor: rgb(95, 61, 61),
+    $ms-ratio: 2
+);
+
+.button {
+    background-color: yellow;
+}
+
+.form {
+    background-color: black;
+}

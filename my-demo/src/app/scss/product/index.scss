@@ -1,0 +1,11 @@
+@forward '../basis/index.scss' with (
+    $dangercolor: green !default,
+    $font-size: 13px !default
+);
+@use '../basis/index.scss';
+
+
+.button {
+    background-color: aqua;
+}
+
