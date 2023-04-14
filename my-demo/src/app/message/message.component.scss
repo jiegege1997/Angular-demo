@@ -2,6 +2,7 @@
 @use '../scss/pi/index.scss' as pi;
 @use '../scss/basis/index.scss' as basis;
 
+
 .red-box {
     font-size: basis.$font-size-px-lv2;
 }
@@ -10,4 +11,5 @@
     height: 100px;
     width: 100px;
     background-color: basis.$dangercolor;
+    color: red;
 }
